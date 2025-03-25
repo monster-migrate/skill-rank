@@ -7,13 +7,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { robotoCondensed } from "@/lib/fonts/robotoCondensed";
 import { cn } from "@/lib/utils";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useState } from "react";
+// import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod"
-
-import { createWorker } from "tesseract.js";
-import PdfParse from "pdf-parse";
-
 export const formSchema = z.object({
   name: z.string()
     .min(2, "Name must be at least 2 characters")
@@ -55,7 +51,7 @@ export default function Home() {
       experience: "",
     },
   });
-  const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  // const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const parseResumeData = async (text: string) => {
     try {
       const response = await fetch("/api/compromise/parse-resume", {
@@ -94,7 +90,7 @@ export default function Home() {
         const parsedData = await parseResumeData(data.text);
         console.log("Parsed Resume Data:", parsedData);
       } catch (error) {
-        console.error("Error sending pdf to API")
+        console.error("Error sending pdf to API", error)
       }
     } else if (typeof values.resume === "string") {
       console.log("Manual Resume Text:", values.resume);
@@ -164,8 +160,8 @@ export default function Home() {
                     accept="application/pdf"
                     onChange={(e) => {
                       const file = e.target.files?.[0] || null;
-                      setSelectedFile(file);
-                      form.setValue("resume", file as any);
+                      // setSelectedFile(file);
+                      form.setValue("resume", file as File);
                     }}
                   />
                 </FormControl>

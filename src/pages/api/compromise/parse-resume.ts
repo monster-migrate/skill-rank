@@ -20,7 +20,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     const name: string = doc.nouns().out("array")[0];
     const emails: string[] = text.match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g) || [];
     const phoneNumbers: string[] = text.match(/(?:\+91[-\s]?)?[6789]\d{9}/g) || [];
-    const textTokens = new Set(doc.terms().out("array").map((word: string) => word.toLowerCase()));
+    const textTokens = new Set<string>(doc.terms().out("array").map((word: string) => word.toLowerCase()));
     const skills: string[] = skillsList.filter((skill) => textTokens.has(skill.toLowerCase()));
 
     const degreeLookup = new Set(
