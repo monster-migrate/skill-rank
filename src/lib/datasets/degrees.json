@@ -1,0 +1,61 @@
+[
+  { "degree": "Bachelor of Technology", "abbreviation": "BTech" },
+  { "degree": "Bachelor of Engineering", "abbreviation": "BE" },
+  { "degree": "Bachelor of Science", "abbreviation": "BSc" },
+  { "degree": "Bachelor of Arts", "abbreviation": "BA" },
+  { "degree": "Bachelor of Commerce", "abbreviation": "BCom" },
+  { "degree": "Bachelor of Computer Applications", "abbreviation": "BCA" },
+  { "degree": "Bachelor of Business Administration", "abbreviation": "BBA" },
+  { "degree": "Bachelor of Pharmacy", "abbreviation": "BPharm" },
+  { "degree": "Bachelor of Law", "abbreviation": "LLB" },
+  { "degree": "Bachelor of Education", "abbreviation": "BEd" },
+  { "degree": "Bachelor of Design", "abbreviation": "BDes" },
+  { "degree": "Bachelor of Architecture", "abbreviation": "BArch" },
+  { "degree": "Bachelor of Fine Arts", "abbreviation": "BFA" },
+  { "degree": "Bachelor of Physiotherapy", "abbreviation": "BPT" },
+  {
+    "degree": "Bachelor of Ayurvedic Medicine and Surgery",
+    "abbreviation": "BAMS"
+  },
+  {
+    "degree": "Bachelor of Homeopathic Medicine and Surgery",
+    "abbreviation": "BHMS"
+  },
+  {
+    "degree": "Bachelor of Unani Medicine and Surgery",
+    "abbreviation": "BUMS"
+  },
+  {
+    "degree": "Bachelor of Siddha Medicine and Surgery",
+    "abbreviation": "BSMS"
+  },
+  {
+    "degree": "Bachelor of Veterinary Science and Animal Husbandry",
+    "abbreviation": "BVSc & AH"
+  },
+  { "degree": "Bachelor of Dental Surgery", "abbreviation": "BDS" },
+  { "degree": "Master of Technology", "abbreviation": "MTech" },
+  { "degree": "Master of Engineering", "abbreviation": "ME" },
+  { "degree": "Master of Science", "abbreviation": "MSc" },
+  { "degree": "Master of Arts", "abbreviation": "MA" },
+  { "degree": "Master of Commerce", "abbreviation": "MCom" },
+  { "degree": "Master of Business Administration", "abbreviation": "MBA" },
+  { "degree": "Master of Computer Applications", "abbreviation": "MCA" },
+  { "degree": "Master of Pharmacy", "abbreviation": "MPharm" },
+  { "degree": "Master of Law", "abbreviation": "LLM" },
+  { "degree": "Master of Education", "abbreviation": "MEd" },
+  { "degree": "Master of Design", "abbreviation": "MDes" },
+  { "degree": "Master of Fine Arts", "abbreviation": "MFA" },
+  { "degree": "Master of Physiotherapy", "abbreviation": "MPT" },
+  { "degree": "Doctor of Philosophy", "abbreviation": "PhD" },
+  { "degree": "Doctor of Medicine", "abbreviation": "MD" },
+  { "degree": "Master of Surgery", "abbreviation": "MS" },
+  { "degree": "Postgraduate Diploma in Management", "abbreviation": "PGDM" },
+  {
+    "degree": "Postgraduate Diploma in Computer Applications",
+    "abbreviation": "PGDCA"
+  },
+  { "degree": "Diploma in Engineering", "abbreviation": "Diploma" },
+  { "degree": "Diploma in Education", "abbreviation": "DEd" },
+  { "degree": "Diploma in Pharmacy", "abbreviation": "DPharm" }
+]

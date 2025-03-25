@@ -58,7 +58,7 @@ export default function Home() {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const parseResumeData = async (text: string) => {
     try {
-      const response = await fetch("http://localhost:5000/parse", {
+      const response = await fetch("/api/compromise/parse-resume", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text }), // Send parsed text
@@ -73,11 +73,11 @@ export default function Home() {
 
       return data; // Return parsed resume data
     } catch (error) {
-      console.error("Error sending text to Flask API:", error);
+      console.error("Error sending text to API:", error);
     }
   };
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
-    // console.log(values);
+    console.log(values);
     if (values.resume instanceof File) {
       try {
         const arrayBuffer = await values.resume.arrayBuffer();
