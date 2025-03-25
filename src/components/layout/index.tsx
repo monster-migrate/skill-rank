@@ -4,10 +4,10 @@ interface PropsInterface {
     children: React.ReactNode;
 }
 const Layout = (props: PropsInterface): JSX.Element => {
-    return <div className="flex">
-        <div className="flex-1">
+    return <div className="bg-neutral-200 w-screen">
+        <div>
             <Navigation />
-            <main className="p-2">
+            <main className="p-2 flex flex-col justify-center items-center">
                 {props.children}
             </main>
         </div>

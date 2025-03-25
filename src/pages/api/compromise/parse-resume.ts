@@ -14,7 +14,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     if (!text) {
         return res.status(400).json({ error: "No text provided" });
     }
-    text = text.replace(/[.,;●]/g, " ");
+    text = text.replace(/[,;●]/g, " ");
     const doc = nlp(text);
 
     const name: string = doc.nouns().out("array")[0];
